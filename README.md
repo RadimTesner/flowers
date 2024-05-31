@@ -1,2 +1,2 @@
 # flowers
-Project fro my dear
+Project for my dear
