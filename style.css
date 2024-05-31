@@ -1,3 +1,99 @@
 html{
     background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+.main{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+.header{
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+.selected{
+    background-color: grey;
+    color: white;
+}
+.random{
+    grid-column: 1;
+}
+.random,
+.generate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+}
+.generate{
+    grid-column: 3;
+}
+.grid{
+    color: black;
+    grid-column: 2;
+    margin-top: 5rem;
+    margin-left : 15%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+.card {
+    min-width: 130px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    aspect-ratio: 1/1;
+    font-weight: bold;
+}
+.red{
+    background-color: rgb(254, 0, 36);
+}
+.yellow{
+    background-color: rgb(254, 220, 1);
+}
+.orange{
+    background-color: rgb(255, 71, 0);
+}
+.pink{
+    background-color: rgb(255, 1, 152);
+}
+.purple{
+    background-color: rgb(131, 8, 255);
+}
+.blue{
+    background-color: rgb(1, 94, 209);
+}
+.turquoise{
+    background-color: rgb(64,224,208);
+}
+.darkred{
+    background-color: rgb(139, 0, 0);
+}
+.lightblue{
+    background-color: rgb(90, 200, 215);
+}
+.selected {
+    background-color: grey;
+    color: white;
 }

@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Flower</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pick 3 Colors</title>
 </head>
 <body>
-    
+    <header class="header">
+        <b>Pick 3 colors!</b>
+    </header>
+    <main class="main">
+        <div class="random">
+            <p class="button" onclick="randomgen()">Get a random combination</p>
+        </div>
+        <div class="grid">
+            <div class="card red"><p>RED</p></div>
+            <div class="card yellow"><p>YELLOW</p></div>
+            <div class="card orange"><p>ORANGE</p></div>
+            <div class="card pink"><p>PINK</p></div>
+            <div class="card purple"><p>PURPLE</p></div>
+            <div class="card blue"><p>BLUE</p></div>
+            <div class="card turquoise"><p>TURQUOISE</p></div>
+            <div class="card darkred"><p>DARK RED</p></div>
+            <div class="card lightblue"><p>LIGHT BLUE</p></div>
+        </div> 
+        <div class="generate">
+            <a href="flower.html" class="button">GENERATE!</a>
+        </div>
+    </main>
+    <script src="./script.js"></script>
 </body>
 </html>
