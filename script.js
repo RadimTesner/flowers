@@ -27,23 +27,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-function randomgen(){
-    let selectedColors = [];
-    const colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple', 'brown', 'pink', 'black'];
+function randomgen() {
     const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.classList.remove('selected');
+    });
+    counter = 0;
+    toggled_colors.length = 0;
 
-    for (let i = 0; i < 3; i++) {
-        const randomNumber = Math.floor(Math.random() * 9);
-        selectedColors.push(colors[randomNumber]);
+    const selectedColors = [];
+    while (selectedColors.length < 3) {
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        if (!selectedColors.includes(randomColor)) {
+            selectedColors.push(randomColor);
+        }
     }
 
-
     cards.forEach(card => {
-        const clickedClass = card.classList;
-        const color = clickedClass[1];
-        if (selectedColors.indexOf(color) !== -1) {
+        const color = card.classList[1];
+        if (selectedColors.includes(color)) {
             card.classList.add('selected');
+            toggled_colors.push(color);
+            counter++;
         }
     });
 }
+
+document.querySelector('.generate a').addEventListener('click', (event) => {
+    event.preventDefault();
+    const baseUrl = 'flower.html';
+    const queryParams = new URLSearchParams({ colors: toggled_colors.join(',') });
+    window.location.href = `${baseUrl}?${queryParams.toString()}`;
+});
 
