@@ -3,12 +3,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #000;  /* Set background to black */
+    background-color: #000;
     margin: 0;
     color: white;
     font-family: "Inter", sans-serif;
 }
-
+a{
+    color: white;
+    text-decoration: none;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+}
 .flower {
     position: relative;
     width: 300px;
@@ -17,7 +29,7 @@ body {
 }
 header {
     text-align: center;
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px;
 }
 .petal {
     position: absolute;
@@ -34,12 +46,12 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #000; /* Set background to black */
+    background-color: #000;
 }
 
 header {
     text-align: center;
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px;
 }
 
 
